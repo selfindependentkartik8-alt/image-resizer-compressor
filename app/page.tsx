@@ -1133,44 +1133,138 @@ const processImage = async () => {
 
       </section>
 
-      {/* Footer */}
+      {/* ================================================= */}
+{/* FOOTER */}
+{/* ================================================= */}
 
-      <footer className="relative z-10 border-t border-white/5 px-4 py-10">
+<footer className="relative z-10 border-t border-white/5 px-4 py-10">
+  <div className="mx-auto max-w-6xl">
 
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-5 text-center sm:flex-row sm:text-left">
+    {/* Related Tools */}
+    <div className="mb-10 text-center">
+      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/50">
+        Explore More
+      </p>
 
-          <div className="flex items-center gap-3">
+      <h3 className="mt-2 text-xl font-bold text-white">
+        More Image & PDF Tools
+      </h3>
 
-            <div className="flex h-9 w-9 items-center justify-center overflow-hidden rounded-full border border-white/10">
-              <img
-                src="/logo.png"
-                alt="KrishAIWorks"
-                className="h-full w-full rounded-full object-cover"
-              />
-            </div>
+      <p className="mx-auto mt-2 max-w-xl text-sm text-zinc-500">
+        Explore more powerful tools from KrishAIWorks to resize,
+        compress, convert, and manage your files.
+      </p>
+    </div>
 
-            <div>
+    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
 
-              <p className="text-sm font-bold">
-                KrishAIWorks
-              </p>
-
-              <p className="text-xs text-zinc-600">
-                AI Solutions That Work
-              </p>
-
-            </div>
-
-          </div>
-
-          <p className="text-xs text-zinc-600">
-            © {new Date().getFullYear()} KrishAIWorks. All rights reserved.
-          </p>
-
+      {/* Image to PDF Converter */}
+      <a
+        href="https://imagetopdfconverter.krishaiworks.com/"
+        className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition-all duration-300 hover:border-white/20 hover:bg-white/[0.06]"
+      >
+        <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/[0.05] text-lg">
+          📄
         </div>
 
-      </footer>
+        <h4 className="font-semibold text-white transition-colors group-hover:text-zinc-200">
+          Image → PDF Converter
+        </h4>
 
+        <p className="mt-2 text-xs leading-5 text-zinc-500">
+          Convert your images into clean and shareable PDF files.
+        </p>
+      </a>
+
+      {/* PDF to JPG/PNG Converter */}
+      <a
+        href="https://pdfaisummarizer.krishaiworks.com/"
+        className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition-all duration-300 hover:border-white/20 hover:bg-white/[0.06]"
+      >
+        <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/[0.05] text-lg">
+          🖼️
+        </div>
+
+        <h4 className="font-semibold text-white transition-colors group-hover:text-zinc-200">
+          PDF AI Summarizer
+        </h4>
+
+        <p className="mt-2 text-xs leading-5 text-zinc-500">
+          Quickly extract and summarize important information from PDFs.
+        </p>
+      </a>
+
+      {/* PDF Compressor */}
+      <a
+        href="https://pdfcompressor.krishaiworks.com/"
+        className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition-all duration-300 hover:border-white/20 hover:bg-white/[0.06]"
+      >
+        <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/[0.05] text-lg">
+          📦
+        </div>
+
+        <h4 className="font-semibold text-white transition-colors group-hover:text-zinc-200">
+          PDF Compressor
+        </h4>
+
+        <p className="mt-2 text-xs leading-5 text-zinc-500">
+          Reduce PDF file size while keeping documents easy to use.
+        </p>
+      </a>
+
+      {/* PDF Merger & Splitter */}
+      <a
+        href="https://pdfmergersplitter.krishaiworks.com/"
+        className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition-all duration-300 hover:border-white/20 hover:bg-white/[0.06]"
+      >
+        <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/[0.05] text-lg">
+          📚
+        </div>
+
+        <h4 className="font-semibold text-white transition-colors group-hover:text-zinc-200">
+          PDF Merger & Splitter
+        </h4>
+
+        <p className="mt-2 text-xs leading-5 text-zinc-500">
+          Merge multiple PDFs or split documents into separate files.
+        </p>
+      </a>
+
+    </div>
+
+    {/* Main Footer */}
+    <div className="mt-10 flex flex-col items-center justify-between gap-5 border-t border-white/5 pt-8 text-center sm:flex-row sm:text-left">
+
+      <div className="flex items-center gap-3">
+
+        <div className="flex h-9 w-9 items-center justify-center overflow-hidden rounded-full border border-white/10">
+          <img
+            src="/logo.png"
+            alt="KrishAIWorks"
+            className="h-full w-full rounded-full object-cover"
+          />
+        </div>
+
+        <div>
+          <p className="text-sm font-bold text-white">
+            KrishAIWorks
+          </p>
+
+          <p className="text-xs text-zinc-600">
+            AI Solutions That Work
+          </p>
+        </div>
+
+      </div>
+
+      <p className="text-xs text-zinc-600">
+        © {new Date().getFullYear()} KrishAIWorks. All rights reserved.
+      </p>
+
+    </div>
+
+  </div>
+</footer>
     </main>
   );
 }
