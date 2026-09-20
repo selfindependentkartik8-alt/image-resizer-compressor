@@ -1232,38 +1232,60 @@ const processImage = async () => {
 
     </div>
 
-    {/* Main Footer */}
-    <div className="mt-10 flex flex-col items-center justify-between gap-5 border-t border-white/5 pt-8 text-center sm:flex-row sm:text-left">
+   {/* Main Footer */}
+<div className="mt-10 flex flex-col items-center justify-between gap-5 border-t border-white/5 pt-8 text-center sm:flex-row sm:text-left">
 
-      <div className="flex items-center gap-3">
+  <div className="flex items-center gap-3">
 
-        <div className="flex h-9 w-9 items-center justify-center overflow-hidden rounded-full border border-white/10">
-          <img
-            src="/logo.png"
-            alt="KrishAIWorks"
-            className="h-full w-full rounded-full object-cover"
-          />
-        </div>
+    <div className="flex h-9 w-9 items-center justify-center overflow-hidden rounded-full border border-white/10">
+      <img
+        src="/logo.png"
+        alt="KrishAIWorks"
+        className="h-full w-full rounded-full object-cover"
+      />
+    </div>
 
-        <div>
-          <p className="text-sm font-bold text-white">
-            KrishAIWorks
-          </p>
-
-          <p className="text-xs text-zinc-600">
-            AI Solutions That Work
-          </p>
-        </div>
-
-      </div>
-
-      <p className="text-xs text-zinc-600">
-        © {new Date().getFullYear()} KrishAIWorks. All rights reserved.
+    <div>
+      <p className="text-sm font-bold text-white">
+        KrishAIWorks
       </p>
 
+      <p className="text-xs text-zinc-600">
+        AI Solutions That Work
+      </p>
     </div>
 
   </div>
+
+  <div className="flex flex-col items-center gap-2 sm:items-end">
+
+    <div className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs text-zinc-600">
+
+      <a
+        href="https://krishaiworks.com/privacy-policy"
+        className="whitespace-nowrap transition hover:text-violet-300"
+      >
+        Privacy Policy
+      </a>
+
+      <a
+        href="https://krishaiworks.com/terms-and-conditions"
+        className="whitespace-nowrap transition hover:text-violet-300"
+      >
+        Terms & Conditions
+      </a>
+
+    </div>
+
+    <p className="text-xs text-zinc-600">
+      © {new Date().getFullYear()} KrishAIWorks. All rights reserved.
+    </p>
+
+  </div>
+
+</div>
+
+</div>
 </footer>
     </main>
   );
